@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Autos | Premium Automotive Service Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+
+    <div class="floating-shape" style="top: 15%; left: -10px;"></div>
+    <div class="floating-shape" style="top: 60%; right: -50px;"></div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">UNIQUE <span>AUTOS</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" style="color: #ff0033;">Home</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Premium Car Care<br><span>Services</span></h1>
+            <p>Experience precision tuning, hyper detailing, and advanced maintenance engineering designed for those who demand ultimate performance.</p>
+            <div class="hero-actions">
+                <a href="pages/services.html" class="btn btn-primary">Our Services</a>
+                <a href="pages/contact.html" class="btn btn-secondary">Book Session</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="img/hero-car.png" alt="3D Rendered Supercar" class="hero-car">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section-padding">
+        <div class="about-split">
+            <div class="about-img-wrap">
+                <img src="img/about-workshop.jpg" alt="Premium Modern Auto Workshop Layout">
+            </div>
+            <div class="about-text">
+                <h3>Engineering Perfection</h3>
+                <p>At Unique Autos, we treat every vehicle as a masterpiece of mechanical engineering. Our state-of-the-art facility pairs next-generation diagnostic computers with veteran craftsmanship to elevate your machine's potential.</p>
+                <p>From complex powertrain repairs to flawless architectural body wraps, our mission is straightforward: Zero Compromises.</p>
+                <a href="pages/contact.html" class="btn btn-primary" style="animation:none;">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services Section -->
+    <section class="section-padding" style="background: #080808;">
+        <h2 class="section-title">Featured <span>Capabilities</span></h2>
+        <div class="cards-flex-container">
+            <div class="card-3d">
+                <div class="card-icon">01</div>
+                <h3>Hyper Detailing</h3>
+                <p>Multi-stage synthetic foam decontamination coupled with precision machine paint correction and protective ultra-hydrophobic ceramic coatings.</p>
+            </div>
+            <div class="card-3d">
+                <div class="card-icon">02</div>
+                <h3>Precision Repair</h3>
+                <p>Comprehensive powertrain diagnostics, advanced mechanical restoration, system calibration, and track-ready structural tuning solutions.</p>
+            </div>
+            <div class="card-3d">
+                <div class="card-icon">03</div>
+                <h3>Fluid Diagnostics</h3>
+                <p>High-efficiency synthetic oil changes, custom engine system flushes, performance climate filtration, and environmental optimizations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-padding">
+        <h2 class="section-title">Why Owners <span>Trust Us</span></h2>
+        <div class="cards-flex-container">
+            <div class="card-3d" style="background:transparent; border-color:#1a1a1a;">
+                <div class="card-icon" style="color:#fff;">✓</div>
+                <h3>Elite Team</h3>
+                <p>Certified master technicians dedicated specifically to performance platforms and meticulous execution mechanics.</p>
+            </div>
+            <div class="card-3d" style="background:transparent; border-color:#1a1a1a;">
+                <div class="card-icon" style="color:#fff;">⚡</div>
+                <h3>Advanced Diagnostics</h3>
+                <p>Utilizing high-end digital infrastructure equivalent to professional racing teams to analyze vehicle health metrics.</p>
+            </div>
+            <div class="card-3d" style="background:transparent; border-color:#1a1a1a;">
+                <div class="card-icon" style="color:#fff;">★</div>
+                <h3>Premium Warranty</h3>
+                <p>Every single service execution, component implementation, and tuning cycle is backed by our elite operations guarantee.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer System -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>UNIQUE <span>AUTOS</span></h3>
+                <p style="color: #aaaaaa; line-height: 1.6;">Redefining automotive luxury and performance preservation. Experience elite technological craftsmanship across every detail.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="index.html">Home</a>
+                <a href="./pages/services.html">Services</a>
+                <a href="./pages/contact.html">Contact Us</a>
+            </div>
+            <div class="footer-socials">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                <a href="#">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src="img/youtube.png" alt="YouTube">
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Unique Autos. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.card-3d, .about-split');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        entry.target.style.opacity = "1";
+                        entry.target.style.transform = "translateY(0) scale(1)";
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(s => {
+                s.style.opacity = "0";
+                s.style.transform = "translateY(20px)";
+                s.style.transition = "all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)";
+                observer.observe(s);
+            });
+        });
+    </script>
+</body>
+</html>

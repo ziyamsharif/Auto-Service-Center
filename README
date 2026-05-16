@@ -1,0 +1,45 @@
+# Unique Autos - Car Care Services Website
+
+A modern, responsive, and animated multi-page website built for a premium auto service center named **Unique Autos**.  
+The project is created using **pure HTML and CSS (Flexbox-based layout)** with smooth animations, 3D visual effects, and a dark red-black automotive theme.
+
+---
+
+## 🚗 Live Demo
+
+🔗 Deployed Website:  
+[Add Your Vercel Link Here]
+
+---
+
+## 📌 Project Overview
+
+This website represents a professional car care service brand offering:
+
+- Interior & Exterior Car Cleaning  
+- Foam Wash & Detailing  
+- Denting & Painting  
+- Engine Oil & AC Services  
+- Tire & Wheel Services  
+- General Vehicle Inspection  
+
+The design focuses on a **modern automotive aesthetic** with 3D motion effects, hover animations, and a fully responsive layout.
+
+---
+
+## 🎨 Features
+
+- Modern dark red-black UI theme  
+- Fully responsive design 
+- Smooth scroll animations  
+- 3D hover and floating image effects  
+- Flexbox-based layout (minimal grid usage)  
+- Sticky navigation bar with blur effect  
+- Animated buttons and interactive cards  
+- Clean and structured multi-page design  
+- Custom local fonts and images only  
+- No external UI frameworks used  
+
+---
+
+## 📁 Folder Structure
